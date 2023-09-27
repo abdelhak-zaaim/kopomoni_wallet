@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A multi-vendor e-commerce web app.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="eFood Multivendor">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>eFood Multivendor</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('flutter-first-frame', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js');
+        navigator.serviceWorker.register("/firebase-messaging-sw.js");
+      });
+    }
+  </script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-messaging.js"></script>
+
+  <div class="center">
+    <img src="logo.png" alt = "logo" height="250" width="250px" />
+    <br>
+    <div class="loader" style="width:250px;text-align: center;"><div class="classic-10"></div></div>
+  </div>
+
+
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyAMLk1-dj8g0qCqU3DkxLKHbrT0VhK5EeQ",
+      authDomain: "e-food-9e6e3.firebaseapp.com",
+      projectId: "e-food-9e6e3",
+      storageBucket: "e-food-9e6e3.appspot.com",
+      messagingSenderId: "410522356318",
+      appId: "1:410522356318:web:c0983d7d2f5e3e933dc2cf",
+      measurementId: "G-MJBDSQ17EV"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <script src="main.dart.js" type="application/javascript"></script>
+</body>
+</html>

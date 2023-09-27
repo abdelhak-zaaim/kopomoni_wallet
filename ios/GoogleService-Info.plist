@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyCnjTyYiFn3qM_ClGUokgB7FJXTLoh9j8U</string>
+	<key>GCM_SENDER_ID</key>
+	<string>697000708855</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.kopomoni.wallet</string>
+	<key>PROJECT_ID</key>
+	<string>kopomoni</string>
+	<key>STORAGE_BUCKET</key>
+	<string>kopomoni.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:697000708855:ios:60cb53071bc07b93c1e1f2</string>
+</dict>
+</plist>
